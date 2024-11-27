@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- swipper js  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- font awsome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mediplus</title>
+  </head>
+  <body>
+    <!-- navBar  -->
+    <nav class="fixed top-0 right-0 w-full bg-white py-3 z-50">
+      <div class="container">
+        <!--====== Top Navbar========= -->
+        <div
+          class="py-2 hidden md:visible md:flex justify-between items-center"
+        >
+          <div>
+            <ul class="flex justify-center items-center gap-10">
+              <a href="#"><li>About</li></a>
+              <a href="#"><li>Doctors</li></a>
+              <a href="#"><li>Contact</li></a>
+              <a href="#"><li>FAQ</li></a>
+            </ul>
+          </div>
+          <div class="flex items-center justify-center gap-5">
+            <div class="flex items-center justify-center gap-4">
+              <i class="fa-solid fa-phone text-primaryColor"></i>
+              <p>+880 1234 56789</p>
+            </div>
+            <div class="flex items-center justify-center gap-4">
+              <i class="fa-solid fa-envelope text-primaryColor"></i>
+              <p
+                class="hover:text-primaryColor transition duration-300 cursor-pointer"
+              >
+                +880 1234 56789
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom NavBar  -->
+        <div class="bottomNav flex justify-between items-center">
+          <div>
+            <img class="w-28 md:w-auto" src="./img/logo.png" alt="" />
+          </div>
+          <ul class="bottom_nav_menu translate-x-[-1000px]" id="hamMenu">
+            <a href="#"><li class="bottom_nav_menu_item">Home</li></a>
+            <a href="#"><li class="bottom_nav_menu_item">Doctors</li></a>
+            <a href="#"><li class="bottom_nav_menu_item">Services</li></a>
+            <a href="#"><li class="bottom_nav_menu_item">Pages</li></a>
+            <a href="#"><li class="bottom_nav_menu_item">Blogs</li></a>
+            <a href="#"><li class="bottom_nav_menu_item">Contact Us</li></a>
+            <div class="absolute top-0 right-0 lg:hidden">
+              <i
+                class="fa-solid fa-xmark text-2xl cursor-pointer"
+                id="hamCloseBtn"
+              ></i>
+            </div>
+          </ul>
+          <div class="flex items-center justify-center gap-4">
+            <button class="btn bg-primaryColor text-white font-bold">
+              Book Appointment
+            </button>
+            <i
+              class="fa-solid fa-bars text-2xl lg:hidden cursor-pointer"
+              id="hamAddBtn"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ============ Hero Aria ============ -->
+    <section class="relative overflow-hidden w-full h-auto">
+      <!-- hero 1 -->
+      <div>
+        <div
+          class="heroAria bg-[url(./img/slider.jpg)] w-full h-full bg-cover object-fill swiper-slide"
+        >
+          <div class="container">
+            <div class="max-w-[500px] pl-2">
+              <h1
+                class="text-semiMedium font-bold md:text-largeText lg:text-[50px]"
+              >
+                We Provide
+                <span class="text-primaryColor">Medical</span> Services That You
+                Can <span class="text-primaryColor">Trust</span>
+              </h1>
+              <p class="text-textColor py-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                ipsam voluptates nihil error, molestias enim voluptas quod sit,
+                est magnam unde facilis, saepe modi quidem a quia itaque.
+                Eveniet, nisi.
+              </p>
+              <div class="pt-2">
+                <button class="btn font-bold bg-primaryColor text-white">
+                  Get Appointment
+                </button>
+                <button class="btn bg-gray-900 font-bold text-white">
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- swip btn  -->
+    </section>
+    <!-- ==========box container=========  -->
+    <section class="relative z-10 grid place-items-center pt-4 pb-5">
+      <div
+        class="container lg:absolute flex flex-col justify-center mt-3 lg:bottom-[-150px] lg:flex-row items-center md:justify-between gap-5"
+      >
+        <!-- box 1 -->
+        <div class="box">
+          <h3 class="font-bold py-2">Lorem Amet</h3>
+          <h2 class="text-mediumFont font-bold py-4">Emergency Cases</h2>
+          <p class="pt-2 w-[300px]">
+            Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in
+            lacus convallis sodales.
+          </p>
+          <div class="mt-4">
+            <a href="#">LEARN MORE</a>
+          </div>
+        </div>
+        <!-- box 2 -->
+        <div class="box">
+          <h3 class="font-bold py-2">Lorem Amet</h3>
+          <h2 class="text-mediumFont font-bold py-4">Emergency Cases</h2>
+          <p class="pt-2 w-[300px]">
+            Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in
+            lacus convallis sodales.
+          </p>
+          <div class="mt-4">
+            <a href="#">LEARN MORE</a>
+          </div>
+        </div>
+        <!-- box 3 -->
+        <div class="box">
+          <h3 class="font-bold py-2">Lorem Amet</h3>
+          <h2 class="text-mediumFont font-bold py-4">Emergency Cases</h2>
+          <p class="pt-2 w-[300px]">
+            Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in
+            lacus convallis sodales.
+          </p>
+          <div class="mt-4">
+            <a href="#">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== help section ========== -->
+    <section class="mt-5 lg:mt-[200px] mb-[20px]">
+      <div class="container grid place-items-center">
+        <div class="grid place-content-center w-[70%]">
+          <h1
+            class="text-center font-bold text-semiMedium md:text-largeText lg:text-[50px]"
+          >
+            We Are Always Ready to Help You & Your Family
+          </h1>
+          <img class="block mx-auto py-2" src="./img/helptop.png" alt="" />
+          <p
+            class="text-center text-smallFont md:text-mediumFont text-textColor py-5"
+          >
+            Lorem ipsum dolor sit amet consectetur adipiscing elit praesent
+            aliquet. pretiumts
+          </p>
+        </div>
+        <!-- help card  -->
+        <div class="mt-[50px] grid md:grid-cols-3 gap-[2rem] py-5">
+          <!-- card  -->
+          <div class="grid place-items-center onHover">
+            <div
+              class="size-[100px] grid place-items-center transition duration-300 helpCard rounded-full border border-grey-900"
+            >
+              <i class="fa-solid fa-car text-[30px] cardP"></i>
+            </div>
+            <h3 class="text-[20px] md:text-[25px] mt-4 font-bold">
+              Emergency Help
+            </h3>
+            <p
+              class="text-[14px] text-center md:text-[18px] mt-4 text-textColor"
+            >
+              Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
+              vulputate.
+            </p>
+          </div>
+          <!-- card  -->
+          <div class="grid place-items-center onHover">
+            <div
+              class="size-[100px] grid place-items-center transition duration-300 helpCard rounded-full border border-grey-900"
+            >
+              <i class="fa-solid fa-notes-medical text-[30px] cardP"></i>
+            </div>
+            <h3 class="text-[20px] md:text-[25px] mt-4 font-bold">
+              Enriched Pharmecy
+            </h3>
+            <p
+              class="text-[14px] text-center md:text-[18px] mt-4 text-textColor"
+            >
+              Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
+              vulputate.
+            </p>
+          </div>
+          <!-- card  -->
+          <div class="grid place-items-center onHover">
+            <div
+              class="size-[100px] grid place-items-center transition duration-300 helpCard rounded-full border border-grey-900"
+            >
+              <i class="fa-solid fa-clipboard text-[30px] cardP"></i>
+            </div>
+            <h3 class="text-[20px] md:text-[25px] mt-4 font-bold">
+              Medical Treatment
+            </h3>
+            <p
+              class="text-[14px] text-center md:text-[18px] mt-4 text-textColor"
+            >
+              Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
+              vulputate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- support section  -->
+    <section
+      class="my-[30px] min-h-[300px] relative bg-[url(./img/bread-bg.jpg)] bg-no-repeat bg-center object-cover"
+    >
+      <div class="support min-h-[300px] grid place-items-center">
+        <!-- items  -->
+        <div class="container grid gap-4 py-10 md:grid-cols-2 lg:grid-cols-4">
+          <!-- item1 -->
+          <div class="supportBox">
+            <div class="supDiv">
+              <i class="fa-solid fa-house text-[30px] text-white"></i>
+            </div>
+            <div>
+              <h1 class="text-[30px] md:text-[35px] font-bold text-white">
+                3468
+              </h1>
+              <p class="text-white text-mediumFont">Hospital Rooms</p>
+            </div>
+          </div>
+          <!-- item1 -->
+          <div class="supportBox">
+            <div class="supDiv">
+              <i class="fa-solid fa-user text-[30px] text-white"></i>
+            </div>
+            <div>
+              <h1 class="text-[30px] md:text-[35px] font-bold text-white">
+                3468
+              </h1>
+              <p class="text-white text-mediumFont">Hospital Rooms</p>
+            </div>
+          </div>
+          <!-- item1 -->
+          <div class="supportBox">
+            <div class="supDiv">
+              <i class="fa-regular fa-face-smile text-[30px] text-white"></i>
+            </div>
+            <div>
+              <h1 class="text-[30px] md:text-[35px] font-bold text-white">
+                3468
+              </h1>
+              <p class="text-white text-mediumFont">Hospital Rooms</p>
+            </div>
+          </div>
+          <!-- item1 -->
+          <div class="supportBox">
+            <div class="supDiv">
+              <i class="fa-regular fa-calendar-days text-[30px] text-white"></i>
+            </div>
+            <div>
+              <h1 class="text-[30px] md:text-[35px] font-bold text-white">
+                3468
+              </h1>
+              <p class="text-white text-mediumFont">Hospital Rooms</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- differnt services section  -->
+    <section>
+      <div class="container gird place-items-center">
+        <!-- services heading  -->
+        <div class="max-w-[50%] gird place-items-center">
+          <h1
+            class="text-center text-gray-700 text-[25px] md:text-[30px] lg:text-[40px] font-bold py-3"
+          >
+            We Offer Different Services To Improve Your Health
+          </h1>
+          <img src="./img/helptop.png" alt="" />
+          <p class="text-textColor py-2 text-center">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit praesent
+            aliquet. pretiumts
+          </p>
+        </div>
+        <!-- services body  -->
+        <div class="flex flex-col lg:flex-row items-center">
+          <!-- right side  -->
+          <div class="mt-3 flex-1">
+            <h3 class="md:text-[30px] font-semibold">Who We Are</h3>
+            <div
+              class="w-[50px] mt-4 h-[2px] text-[20px] bg-primaryColor"
+            ></div>
+            <p class="text-sm md:text-[16px] py-3 md:py-5 text-textColor">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              pharetra antege vel est lobortis, a commodo magna rhoncus. In quis
+              nisi non emet quam pharetra commodo.
+            </p>
+            <p class="text-sm md:text-[16px] py-2 md:py-5 text-textColor">
+              Class aptent taciti sociosqu ad litora torquent per conubia
+              nostra, per inceptos himenaeos.
+            </p>
+            <!-- service  -->
+            <div class="flex items-center gap-4">
+              <div class="text-textColor">
+                <div class="flex items-center gap-5 mt-3">
+                  <i class="fa-solid fa-play text-primaryColor"></i>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="flex items-center gap-5 mt-3">
+                  <i class="fa-solid fa-play text-primaryColor"></i>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="flex items-center gap-5 mt-3">
+                  <i class="fa-solid fa-play text-primaryColor"></i>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+              <div class="text-textColor">
+                <div class="flex items-center gap-5 mt-3">
+                  <i class="fa-solid fa-play text-primaryColor"></i>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="flex items-center gap-5 mt-3">
+                  <i class="fa-solid fa-play text-primaryColor"></i>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="flex items-center gap-5 mt-3">
+                  <i class="fa-solid fa-play text-primaryColor"></i>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- left side  -->
+          <div class="mt-[3rem] flex-1">
+            <img class="w-[100%] h-[100%]" src="./img/video-bg.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- imergency call care  -->
+    <section
+      class="my-[30px] min-h-[300px] relative bg-[url(./img/call-bg.jpg)] bg-no-repeat bg-cover object-cover"
+    >
+      <div class="primaryBg min-h-[400px] grid place-items-center">
+        <!-- items  -->
+        <div class="container grid place-items-center text-center text-white">
+          <div class="max-w-[700px]">
+            <h1
+              class="text-[25px] text-gray-700 py-4 md:text-[30px] lg:text-[40px] font-bold"
+            >
+              Do you need Emergency Medical Care? Call @ 1234 56789
+            </h1>
+            <p class="py-3 text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              porttitor dictum turpis nec gravida.
+            </p>
+            <div class="flex gap-3 justify-center mt-4 p-1">
+              <button
+                class="btn bg-white text-black hover:bg-transparent hover:text-white hover:outline hover:outline-white"
+              >
+                Contact Now
+              </button>
+              <button
+                class="btn btn bg-transparent text-white hover:bg-white hover:text-black outline outline-white hover:outline-none"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- maintain Hospital section  -->
+    <section>
+      <div class="container gird place-items-center">
+        <!-- maintain hospital heading  -->
+        <div class="max-w-[50%] gird place-items-center">
+          <h1
+            class="text-center text-[25px] text-gray-700 md:text-[30px] lg:text-[40px] font-bold py-3"
+          >
+            We Maintain Cleanliness Rules Inside Our Hospital
+          </h1>
+          <img src="./img/helptop.png" alt="" />
+          <p class="text-center text-textColor py-2">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit praesent
+            aliquet. pretiumts
+          </p>
+        </div>
+        <!-- maintain hopital body  -->
+        <div class="mt-5">
+          <!-- items  -->
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <!-- item  -->
+            <div class="">
+              <div
+                class="bg-[url(./img/pf1.jpg)] cursor-pointer overflow-hidden min-w-[255px] min-h-[255px] bg-no-repeat bg-center object-fill"
+              >
+                <div
+                  class="min-w-[300px] opacity-0 grid place-content-center transition duration-300 hover:opacity-100 min-h-[255px] bg-[rgba(119,150,255,0.7)]"
+                >
+                  <button
+                    class="btn bg-white text-black border border-white hover:bg-transparent hover:text-white font-bold"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item  -->
+            <div class="">
+              <div
+                class="bg-[url(./img/pf1.jpg)] cursor-pointer overflow-hidden min-w-[255px] min-h-[255px] bg-no-repeat bg-center object-fill"
+              >
+                <div
+                  class="min-w-[300px] opacity-0 grid place-content-center transition duration-300 hover:opacity-100 min-h-[255px] bg-[rgba(119,150,255,0.7)]"
+                >
+                  <button
+                    class="btn bg-white text-black border border-white hover:bg-transparent hover:text-white font-bold"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item  -->
+            <div class="">
+              <div
+                class="bg-[url(./img/pf1.jpg)] cursor-pointer overflow-hidden min-w-[255px] min-h-[255px] bg-no-repeat bg-center object-fill"
+              >
+                <div
+                  class="min-w-[300px] opacity-0 grid place-content-center transition duration-300 hover:opacity-100 min-h-[255px] bg-[rgba(119,150,255,0.7)]"
+                >
+                  <button
+                    class="btn bg-white text-black border border-white hover:bg-transparent hover:text-white font-bold"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- best treatment section  -->
+    <section class="bg-[#f9f9f9]">
+      <div class="container grid place-items-center">
+        <div class="max-w-[50%] gird place-items-center">
+          <h1
+            class="text-center text-[25px] md:text-[30px] text-gray-700 lg:text-[40px] font-bold py-3"
+          >
+            We Maintain Cleanliness Rules Inside Our Hospital
+          </h1>
+          <img src="./img/helptop.png" alt="" />
+          <p class="text-textColor text-center py-2">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit praesent
+            aliquet. pretiumts
+          </p>
+        </div>
+        <!-- cards  -->
+        <div
+          class="mt-5 w-full h-full flex flex-col lg:flex-row justify-center items-center gap-5"
+        >
+          <!-- card 1 -->
+          <div
+            class="p-4 bg-white max-w-[400px] w-[100%] border border-gray-200"
+          >
+            <div class="gird place-items-center">
+              <i
+                class="fa-solid fa-scissors text-primaryColor text-[40px] md:text-[60px] -rotate-[90deg] my-3"
+              ></i>
+
+              <h3 class="text-[20px] font-bold md:text-[25px] mt-3">
+                Plastic Suggery
+              </h3>
+              <div class="flex items-end text-textColor">
+                <h2
+                  class="text-[25px] md:text-[35px] font-bold text-primaryColor"
+                >
+                  $299
+                </h2>
+                <span class="">/ Per Visit</span>
+              </div>
+            </div>
+            <div class="px-3 mt-5">
+              <div
+                class="flex text-textColor justify-between items-center my-3"
+              >
+                <p>Cubitur sollicitudin fentum</p>
+                <div
+                  class="w-[20px] h-[20px] bg-primaryColor text-white grid place-items-center rounded-full"
+                >
+                  <i class="fa-solid fa-check text-[10px]"></i>
+                </div>
+              </div>
+              <div
+                class="flex text-textColor justify-between items-center my-3"
+              >
+                <p>Cubitur sollicitudin fentum</p>
+                <div
+                  class="w-[20px] h-[20px] bg-primaryColor text-white grid place-items-center rounded-full"
+                >
+                  <i class="fa-solid fa-check text-[10px]"></i>
+                </div>
+              </div>
+              <div
+                class="flex text-textColor justify-between items-center my-3"
+              >
+                <p>Cubitur sollicitudin fentum</p>
+                <div
+                  class="w-[20px] h-[20px] bg-primaryColor text-white grid place-items-center rounded-full"
+                >
+                  <i class="fa-solid fa-check text-[10px]"></i>
+                </div>
+              </div>
+              <div
+                class="flex text-textColor justify-between items-center my-3"
+              >
+                <p>Cubitur sollicitudin fentum</p>
+                <div
+                  class="w-[20px] h-[20px] bg-primaryColor text-white grid place-items-center rounded-full"
+                >
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div>
+              <div
+                class="flex text-textColor justify-between items-center my-3"
+              >
+                <p>Cubitur sollicitudin fentum</p>
+                <div
+                  class="w-[20px] h-[20px] bg-primaryColor text-white grid place-items-center rounded-full"
+                >
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div>
+              <button
+                class="btn bg-primaryColor rounded-md text-white font-bold w-[100%] mt-4"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+          <!-- card 2  -->
+          <div
+            class="p-4 bg-white max-w-[400px] w-[100%] border border-gray-200 my-4"
+          >
+            <div class="gird place-items-center">
+              <i
+                class="fa-solid fa-tooth text-primaryColor text-[40px] md:text-[60px] my-3"
+              ></i>
+              <h3 class="text-[20px] font-bold md:text-[25px] mt-3">
+                Plastic Suggery
+              </h3>
+              <div class="flex items-end text-textColor">
+                <h2
+                  class="text-[25px] md:text-[35px] font-bold text-primaryColor"
+                >
+                  $199
+                </h2>
+                <span class="">/ Per Visit</span>
+              </div>
+            </div>
+            <div class="px-3 mt-5">
+              <div
+                class="flex text-textColor justify-between items-center my-3"
+              >
+                <p>Cubitur sollicitudin fentum</p>
+                <div
+                  class="w-[20px] h-[20px] bg-primaryColor text-white grid place-items-center rounded-full"
+                >
+                  <i class="fa-solid fa-check text-[10px]"></i>
+                </div>
+              </div>
+              <div
+                class="flex text-textColor justify-between items-center my-3"
+              >
+                <p>Cubitur sollicitudin fentum</p>
+                <div
+                  class="w-[20px] h-[20px] bg-primaryColor text-white grid place-items-center rounded-full"
+                >
+                  <i class="fa-solid fa-check text-[10px]"></i>
+                </div>
+              </div>
+              <div
+                class="flex text-textColor justify-between items-center my-3"
+              >
+                <p>Cubitur sollicitudin fentum</p>
+                <div
+                  class="w-[20px] h-[20px] bg-primaryColor text-white grid place-items-center rounded-full"
+                >
+                  <i class="fa-solid fa-check text-[10px]"></i>
+                </div>
+              </div>
+              <div
+                class="flex text-textColor justify-between items-center my-3"
+              >
+                <p>Cubitur sollicitudin fentum</p>
+                <div
+                  class="w-[20px] h-[20px] bg-primaryColor text-white grid place-items-center rounded-full"
+                >
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div>
+              <div
+                class="flex text-textColor justify-between items-center my-3"
+              >
+                <p>Cubitur sollicitudin fentum</p>
+                <div
+                  class="w-[20px] h-[20px] bg-primaryColor text-white grid place-items-center rounded-full"
+                >
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div>
+              <button
+                class="btn bg-primaryColor rounded-md text-white font-bold w-[100%] mt-4"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+          <!-- card 3  -->
+          <div
+            class="p-4 bg-white max-w-[400px] w-[100%] border border-gray-200"
+          >
+            <div class="gird place-items-center">
+              <i
+                class="fa-solid fa-heart-pulse text-primaryColor text-[40px] md:text-[60px] my-3"
+              ></i>
+
+              <h3 class="text-[20px] font-bold md:text-[25px] mt-3">
+                Heart Suggery
+              </h3>
+              <div class="flex items-end text-textColor">
+                <h2
+                  class="text-[25px] md:text-[35px] font-bold text-primaryColor"
+                >
+                  $399
+                </h2>
+                <span class="">/ Per Visit</span>
+              </div>
+            </div>
+            <div class="px-3 mt-5">
+              <div
+                class="flex text-textColor justify-between items-center my-3"
+              >
+                <p>Cubitur sollicitudin fentum</p>
+                <div
+                  class="w-[20px] h-[20px] bg-primaryColor text-white grid place-items-center rounded-full"
+                >
+                  <i class="fa-solid fa-check text-[10px]"></i>
+                </div>
+              </div>
+              <div
+                class="flex text-textColor justify-between items-center my-3"
+              >
+                <p>Cubitur sollicitudin fentum</p>
+                <div
+                  class="w-[20px] h-[20px] bg-primaryColor text-white grid place-items-center rounded-full"
+                >
+                  <i class="fa-solid fa-check text-[10px]"></i>
+                </div>
+              </div>
+              <div
+                class="flex text-textColor justify-between items-center my-3"
+              >
+                <p>Cubitur sollicitudin fentum</p>
+                <div
+                  class="w-[20px] h-[20px] bg-primaryColor text-white grid place-items-center rounded-full"
+                >
+                  <i class="fa-solid fa-check text-[10px]"></i>
+                </div>
+              </div>
+              <div
+                class="flex text-textColor justify-between items-center my-3"
+              >
+                <p>Cubitur sollicitudin fentum</p>
+                <div
+                  class="w-[20px] h-[20px] bg-primaryColor text-white grid place-items-center rounded-full"
+                >
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div>
+              <div
+                class="flex text-textColor justify-between items-center my-3"
+              >
+                <p>Cubitur sollicitudin fentum</p>
+                <div
+                  class="w-[20px] h-[20px] bg-primaryColor text-white grid place-items-center rounded-full"
+                >
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div>
+              <button
+                class="btn bg-primaryColor rounded-md text-white font-bold w-[100%] mt-4"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Book appoinment  -->
+    <section>
+      <div class="container grid place-items-center">
+        <!-- heading  -->
+        <div class="max-w-[50%] gird place-items-center">
+          <h1
+            class="text-center text-[25px] md:text-[30px] lg:text-[40px] text-gray-700 font-bold py-3"
+          >
+            We Are Always Ready to Help You. Book An Appointment
+          </h1>
+          <img src="./img/helptop.png" alt="" />
+          <p class="text-textColor py-2 text-center">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit praesent
+            aliquet. pretiumts
+          </p>
+        </div>
+        <!-- body  -->
+        <div class="md:flex items-center">
+          <!-- contact  -->
+          <div class="mt-10 space-y-5 flex-1">
+            <div class="lg:flex space-y-5 lg:space-y-0 gap-5">
+              <div class="py-2 px-4 border border-gray-300 w-full lg:w-[250px]">
+                <input type="text" class="border-none outline-none" placeholder="name" name="name" />
+              </div>
+              <div class="py-2 px-4 border border-gray-300 w-full lg:w-[250px]">
+                <input type="text" class="border-none outline-none" placeholder="email" name="email" />
+              </div>
+            </div>
+            <div class="lg:flex space-y-5 lg:space-y-0 gap-5">
+              <div class="py-2 px-4 border border-gray-300 w-full lg:w-[250px]">
+                <input type="text" class="border-none outline-none" placeholder="phone" name="phone" />
+              </div>
+              <div class="py-2 px-4 border border-gray-300 w-full lg:w-[250px]">
+                <select
+                  class="border-none outline-none text-gray-400"
+                  name="Department"
+                  id=""
+                >
+                  <option value="department">Department</option>
+                  <option value="department">Department</option>
+                  <option value="department">Department</option>
+                  <option value="department">Department</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <textarea name="message" id="" class="w-[100%] resize-none border border-gray-300 h-[150px] p-5"></textarea>
+            </div>
+            <button class="btn bg-primaryColor font-bold text-white">Book An Appoinment</button>
+          </div>
+          <!-- image  -->
+          <div class="flex-1">
+            <img src="./img/contact-img.png" class="w-full h-full" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5 bg-primaryColor">
+      <p class="text-center font-semibold text-[12px] text-gray-300">© Copyright 2045 | All Rights Reserved by wpthemesgrid</p>
+    </footer>
+    <!-- swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- script file  -->
+    <script src="main.js"></script>
+  </body>
+</html>

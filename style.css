@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+section{
+  padding: 20px 0;
+}
+.primaryBg,.support{
+  background-color: rgba(29, 120, 209, 0.8);
+}
+.btn {
+  @apply px-2 py-2 md:px-3 lg:px-4 lg:py-3 rounded-md z-10 relative overflow-hidden;
+}
+.btn::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  transition: width .4s linear;
+  height: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  inset: 1;
+  z-index: -2;
+  background-color: #020214ec;
+}
+.btn:hover::after{
+  width: 100%;
+}
+/* nav bottm */
+.bottom_nav_menu {
+  @apply absolute left-0 top-0 w-[300px] h-[100vh]  transition bg-white text-center space-x-5 lg:static lg:flex items-center lg:gap-5 lg:bg-inherit lg:w-auto lg:h-auto lg:translate-x-0 lg:text-left lg:space-x-0 overflow-hidden;
+}
+.bottom_nav_menu_item {
+  @apply hover:text-primaryColor relative px-2 text-center py-4 font-semibold transition-all duration-500;
+}
+.bottom_nav_menu_item::before {
+  content: "";
+  background-color: #1b76d1;
+  width: 0;
+  left: 50%;
+  height: 3px;
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+  transform: translate(-50%);
+  transition: all;
+  transition-duration: 500ms;
+}
+.bottom_nav_menu_item:hover::before {
+  width: 100%;
+}
+
+/* hero  */
+.heroAria {
+  @apply relative bg-no-repeat px-2 mt-[40px] md:mt-[100px] grid place-items-center w-auto h-auto object-cover bg-center pt-[5rem] pb-[8rem];
+}
+
+/* box container  */
+.box {
+  @apply p-5 bg-primaryColor text-white flex-1 max-w-[400px] rounded-md transition-all duration-500;
+}
+.box:hover {
+  box-shadow: 3px 5px 10px 1px rgb(29, 120, 209);
+  transform: translateY(-5px);
+}
+
+/* help section  */
+.onHover:hover .helpCard {
+  @apply bg-primaryColor;
+}
+.onHover:hover .helpCard i {
+  @apply text-white;
+}
+/* support section  */
+.support {
+  .supportBox {
+    @apply flex items-center justify-center gap-4;
+    .supDiv {
+      @apply size-[70px] rounded-full grid place-items-center transition-all border border-white;
+    }
+  }
+}
+.supportBox:hover .supDiv {
+  background-color: white;
+}
+.supportBox:hover .supDiv i {
+  color: #1b76d1;
+}
